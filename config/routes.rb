@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
 
   patch "/users/:id" => "users#update"
+  
+  get "/users" => "users#index"
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  get "/users/:id" => "users#show"
+ 
 end
